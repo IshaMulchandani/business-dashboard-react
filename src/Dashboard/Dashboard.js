@@ -12,7 +12,7 @@ export default function Dashboard(){
                     <Link to={'/pending-invoices'}><li>Pending Invoices</li></Link>
                     <Link to={'/payments'}><li>Upcoming Payments</li></Link>
                     <Link to={'/payment-history'} ><li>Payment History</li></Link>
-                    <li>Credit Score</li>
+                    <Link to={'/credit-score'}><li>Credit Score</li></Link>
                     <li>Settings</li>
                 </ul>
             </div>
@@ -43,7 +43,7 @@ export default function Dashboard(){
                             <p>&#8377;64,50,876</p>
                         </div>
                         <div className="actionSec2">
-                            <button>See Details</button>
+                            <Link to={'/payment-history'} ><button>See Details</button></Link>
                         </div>
                     </div>
                     <div className="action" id="action4">
@@ -52,7 +52,7 @@ export default function Dashboard(){
                             <p>High</p>
                         </div>
                         <div className="actionSec2">
-                            <button>See Details</button>
+                            <Link to={'/credit-score'}><button>See Details</button></Link>
                         </div>
                     </div>
                 </div>

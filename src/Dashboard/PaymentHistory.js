@@ -12,7 +12,7 @@ export default function PaymentHistory(){
                     <Link to={'/pending-invoices'}><li>Pending Invoices</li></Link>
                     <Link to={'/payments'}><li>Upcoming Payments</li></Link>
                     <Link to={'/payment-history'} ><li>Payment History</li></Link>
-                    <li>Credit Score</li>
+                    <Link to={'/credit-score'} ><li>Credit Score</li></Link>
                     <li>Settings</li>
                 </ul>
             </div>

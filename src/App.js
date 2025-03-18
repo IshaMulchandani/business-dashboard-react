@@ -8,6 +8,7 @@ import PendingInvoices from './Dashboard/PendingInvoices';
 import PaymentGateway from './Dashboard/PaymentGateway';
 import Payments from './Dashboard/Payments';
 import PaymentHistory from './Dashboard/PaymentHistory'
+import CreditScore from './Dashboard/CreditScore';
 
 function App() {
   return(
@@ -21,6 +22,7 @@ function App() {
         <Route path='/payment-gateway' element={<PaymentGateway/>} />
         <Route path='/payments' element={<Payments/>} ></Route>
         <Route path='/payment-history' element={<PaymentHistory/>} />
+        <Route path='/credit-score' element={<CreditScore/>} />
       </Routes>
     </Router>
   )

@@ -1,0 +1,159 @@
+#apply-btn:hover{
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
+.mainCont{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+}
+.sideNav{
+    width: 25%;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+    padding: 0.2rem;
+    border-radius: 10px;
+}
+.sideNav li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.page{
+    width: 70%;
+}
+.line3{
+    margin-top: 1rem;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+    padding: 1rem;
+    border-radius: 10px;
+    /* position: sticky;
+    top: 0px; */
+    z-index: 100;
+    background-color: white;
+}
+.report-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.score, .line{
+    width: 30vw;
+}
+.progress-container {
+    display: flex;
+    width: 100%;
+    /* max-width: 600px; */
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
+.segment {
+    flex: 1;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.red { background-color: red; }
+.orange { background-color: orange; }
+.yellow { background-color: gold; }
+.green { background-color: green; }
+.bar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    height: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+.bar-fill {
+    width: 80%; /* Adjust this to change the filled portion */
+    height: 100%;
+    background-color: black;
+}
+.report-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.years{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: smaller;
+}
+.scoreDetail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0%;
+}
+.scoreDetail p{
+    margin: 0%;
+}
+.card1{
+    font-size: smaller;
+    width: 45%;
+    line-height: 1vh;
+}
+.scoreCard{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+}
+.card2{
+    width: 45%;
+    font-size: smaller;
+}
+.det h4{
+    margin: 0;
+}
+.card1 h4{
+    margin: 2vh;
+}
+.card-det{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: smaller;
+}
+.card-det p{
+    width: 40%;
+}
+.card-det p, .card-det h4{
+    margin: 0%;
+}
+.genScoreCard2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card3{
+    width: 45%;
+    margin: 0%;
+}
+.card4{
+    width: 45%;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button{
+    border: none;
+    height: 6vh;
+    width: 12vw;
+    background-color: blue;
+    border-radius: 10px;
+    margin: 2rem;
+    color: aliceblue;
+}
+.btn button:hover{
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
