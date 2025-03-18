@@ -1,8 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import BasicDetails from './BasicDetails';
-import Contact from './Contact';
-import Agreement from './Agreement';
+import BasicDetails from './Registration/BasicDetails';
+import Contact from './Registration/Contact';
+import Agreement from './Registration/Agreement';
+import Dashboard from './Dashboard/Dashboard';
 
 function App() {
   return(
@@ -11,7 +12,7 @@ function App() {
         <Route path="/" element={<BasicDetails />} />
         <Route path='/contactDetails' element={<Contact/>}/>
         <Route path='/agreement&verification' element={<Agreement/>}/>
-        <Route path='/dasboard' />
+        <Route path='/dashboard' element={<Dashboard/>} />
       </Routes>
     </Router>
   )
