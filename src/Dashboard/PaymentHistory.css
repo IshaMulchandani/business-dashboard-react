@@ -1,0 +1,25 @@
+.payHistTable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hist-btn button{
+    height: 6vh;
+    width: 18vw;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+#hist-btn1 button{
+    background-color: blue;
+}
+
+#hist-btn2 button{
+    background-color: red;
+}
+
+#hist-btn1 button:hover, #hist-btn2 button:hover{
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
