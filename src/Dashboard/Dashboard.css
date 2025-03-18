@@ -7,12 +7,16 @@
     color: white;
     padding: 1rem;
 }
+.navBar ul a{
+    color: white;
+    text-decoration: none;
+}
 
 .mainH2 {
     text-align: center;
 }
 
-.navBar ul li:hover {
+.navBar ul li:hover{
     text-decoration: underline;
     cursor: pointer;
 }

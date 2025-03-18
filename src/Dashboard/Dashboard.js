@@ -1,5 +1,6 @@
 import { React } from 'react'
 import './Dashboard.css'
+import { Link } from 'react-router-dom'
 
 export default function Dashboard(){
     return(
@@ -8,7 +9,7 @@ export default function Dashboard(){
             <div className="navBar">
                 <ul>
                     <li>Home</li>
-                    <li>Pending Invoices</li>
+                    <Link to={'/pending-invoices'}><li>Pending Invoices</li></Link>
                     <li>Payments</li>
                     <li>Credit Score</li>
                     <li>Settings</li>
@@ -23,7 +24,7 @@ export default function Dashboard(){
                             <p>&#8377;46,00,000</p>
                         </div>
                         <div className="actionSec2">
-                            <button>See Details</button>
+                        <Link to={'/pending-invoices'}><button>See Details</button></Link>
                         </div>
                     </div>
                     <div className="action" id="action2">

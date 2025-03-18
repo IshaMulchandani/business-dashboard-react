@@ -1,0 +1,55 @@
+.invtable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table, td, th{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 1rem;
+}
+td button{
+    background-color: green;
+    color: white;
+    height: 5vh;
+    width: 6vw;
+    border: none;
+    border-radius: 10px;
+}
+
+td button:hover{
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
+
+.btn-invoices button{
+    height: 8vh;
+    width: 16vw;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+.btns{
+    margin: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#btn1 button{
+    background-color: red;
+}
+
+#btn2 button{
+    background-color: blue;
+}
+
+.btn-invoices button:hover{
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
