@@ -8,9 +8,10 @@ export default function Dashboard(){
             <h1 className="mainH2">AgriCred</h1>
             <div className="navBar">
                 <ul>
-                    <li>Home</li>
+                    <Link to={'/dashboard'}><li>Home</li></Link>
                     <Link to={'/pending-invoices'}><li>Pending Invoices</li></Link>
-                    <li>Payments</li>
+                    <Link to={'/payments'}><li>Upcoming Payments</li></Link>
+                    <Link to={'/payment-history'} ><li>Payment History</li></Link>
                     <li>Credit Score</li>
                     <li>Settings</li>
                 </ul>
@@ -33,7 +34,7 @@ export default function Dashboard(){
                             <p>&#8377;12,00,000</p>
                         </div>
                         <div className="actionSec2">
-                            <button>See Details</button>
+                            <Link to={'/payments'} ><button>See Details</button></Link>
                         </div>
                     </div>
                     <div className="action" id="action3">

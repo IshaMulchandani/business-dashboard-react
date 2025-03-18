@@ -10,7 +10,8 @@ export default function PendingInvoices(){
                 <ul>
                     <Link to={'/dashboard'}><li>Home</li></Link>
                     <Link to={'/pending-invoices'}><li>Pending Invoices</li></Link>
-                    <li>Payments</li>
+                    <Link to={'/payments'}><li>Upcoming Payments</li></Link>
+                    <Link to={'/payment-history'} ><li>Payment History</li></Link>
                     <li>Credit Score</li>
                     <li>Settings</li>
                 </ul>
