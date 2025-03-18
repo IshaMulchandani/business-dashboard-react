@@ -1,0 +1,74 @@
+.sideNav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+    padding: 0%;
+    text-align: center;
+}
+
+.basicDetCont{
+    display: flex;
+    align-items: start;
+}
+.page{
+    width: 70%;
+}
+.sideNav{
+    width: 20%;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin: 1rem;
+}
+.sideNav h2{
+    text-align: center;
+}
+#focusDet{
+    background-color: green;
+    color: white;
+    width: 100%;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+ form div {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    /* font-weight: bold; */
+    margin-bottom: 5px;
+}
+input, select, .input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+.btn button{
+    height: 6vh;
+    width: 8vw;
+    border-radius: 10px;
+    border: 2px solid green;
+    background-color: white;
+}
+.btn button a{
+    color: green;
+    text-decoration: none;
+}
+
+.btn button:hover{
+    background-color: rgba(0,255,0,0.1);
+}
