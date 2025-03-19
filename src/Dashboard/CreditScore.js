@@ -13,7 +13,7 @@ export default function CreditScore() {
                     <li><Link to="/payments">Upcoming Payments</Link></li>
                     <li><Link to="/payment-history">Payment History</Link></li>
                     <li><Link to="/credit-score">Credit Score</Link></li>
-                    <li>Settings</li>
+                    <Link to={'/settings'}><li>Settings</li></Link>
                 </ul>
             </div>
             <div className="summary">

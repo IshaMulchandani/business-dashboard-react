@@ -13,7 +13,7 @@ export default function PendingInvoices(){
                     <Link to={'/payments'}><li>Upcoming Payments</li></Link>
                     <Link to={'/payment-history'} ><li>Payment History</li></Link>
                     <Link to={'/credit-score'}><li>Credit Score</li></Link>
-                    <li>Settings</li>
+                    <Link to={'/settings'}><li>Settings</li></Link>
                 </ul>
             </div>
             <div className="summary">

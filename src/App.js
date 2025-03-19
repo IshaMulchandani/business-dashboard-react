@@ -9,7 +9,7 @@ import PaymentGateway from './Dashboard/PaymentGateway';
 import Payments from './Dashboard/Payments';
 import PaymentHistory from './Dashboard/PaymentHistory'
 import CreditScore from './Dashboard/CreditScore';
-
+import Settings from './Dashboard/Settings';
 function App() {
   return(
     <Router>
@@ -23,6 +23,7 @@ function App() {
         <Route path='/payments' element={<Payments/>} ></Route>
         <Route path='/payment-history' element={<PaymentHistory/>} />
         <Route path='/credit-score' element={<CreditScore/>} />
+        <Route path='/settings' element={<Settings/>} />
       </Routes>
     </Router>
   )
