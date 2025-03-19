@@ -10,6 +10,7 @@ import Payments from './Dashboard/Payments';
 import PaymentHistory from './Dashboard/PaymentHistory'
 import CreditScore from './Dashboard/CreditScore';
 import Settings from './Dashboard/Settings';
+import InvoiceByUs from './Dashboard/InvoiceByUs';
 function App() {
   return(
     <Router>
@@ -24,6 +25,7 @@ function App() {
         <Route path='/payment-history' element={<PaymentHistory/>} />
         <Route path='/credit-score' element={<CreditScore/>} />
         <Route path='/settings' element={<Settings/>} />
+        <Route path='/invoices-by-us' element={<InvoiceByUs/>}/>
       </Routes>
     </Router>
   )

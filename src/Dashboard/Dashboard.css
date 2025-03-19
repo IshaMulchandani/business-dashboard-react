@@ -1,25 +1,15 @@
-.navBar ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: green;
-    color: white;
-    padding: 1rem;
-}
-.navBar ul a{
-    color: white;
-    text-decoration: none;
-}
-
 .mainH2 {
     text-align: center;
 }
-
-.navBar ul li:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.navBar ul, .navBar ul li a{
+    background-color: green;
+    color: white;
 }
+
+.navBar ul li:hover, .navBar ul li a:hover{
+    text-decoration: underline;
+}
+
 
 .action {
     width: 60%;
@@ -66,4 +56,17 @@
 
 #action4{
     background-color: lightgoldenrodyellow;
+}
+.dropdown{
+    position: absolute;
+    top: 20vh;
+    left: 17vw;
+    background-color: green;
+    list-style: none;
+    display: none;
+    display: flex;
+    flex-direction: column;
+}
+#dd:focus .dropdown{
+    display: block;
 }

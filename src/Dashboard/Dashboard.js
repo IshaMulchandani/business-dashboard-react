@@ -1,21 +1,37 @@
-import { React } from 'react'
-import './Dashboard.css'
-import { Link } from 'react-router-dom'
+import { React, useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Dashboard.css';
 
-export default function Dashboard(){
-    return(
+export default function Dashboard() {
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setDropdownOpen(!dropdownOpen);
+    };
+
+    return (
         <div className="dashboardCont">
             <h1 className="mainH2">AgriCred</h1>
             <div className="navBar">
                 <ul>
-                    <Link to={'/dashboard'}><li>Home</li></Link>
-                    <Link to={'/pending-invoices'}><li>Pending Invoices</li></Link>
-                    <Link to={'/payments'}><li>Upcoming Payments</li></Link>
-                    <Link to={'/payment-history'} ><li>Payment History</li></Link>
-                    <Link to={'/credit-score'}><li>Credit Score</li></Link>
-                    <Link to={'/settings'}><li>Settings</li></Link>
+                    <li><Link to="/dashboard">Home</Link></li>
+                    <li id='dd' onClick={toggleDropdown}>
+                        Invoices on Us ▼
+                        {dropdownOpen && (
+                            <ul className="dropdown">
+                                <li><Link to={'/pending-invoices'}>Pending Invoices</Link></li>
+                                <li><Link to={'/payments'}>Upcoming Payments</Link></li>
+                            </ul>
+                        )}
+                    </li>
+                    <li><Link to="/payment-history">Payment History</Link></li>
+                    <li><Link to={'/invoices-by-us'}>Invoices by Us</Link></li>
+                    <li><Link to="/credit-score">Credit Score</Link></li>
+                    <li><Link to="/settings">Settings</Link></li>
                 </ul>
             </div>
+        
+
             <div className="summary">
                 <h2 className="mainH2">Business Dashboard</h2>
                 <div className="actions">
@@ -25,7 +41,7 @@ export default function Dashboard(){
                             <p>&#8377;46,00,000</p>
                         </div>
                         <div className="actionSec2">
-                        <Link to={'/pending-invoices'}><button>See Details</button></Link>
+                            <Link to={'/pending-invoices'}><button>See Details</button></Link>
                         </div>
                     </div>
                     <div className="action" id="action2">
@@ -58,5 +74,5 @@ export default function Dashboard(){
                 </div>
             </div>
         </div>
-    )
+    );
 }

@@ -1,21 +1,35 @@
 import React from 'react';
 import './CreditScore.css';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function CreditScore() {
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    
+        const toggleDropdown = () => {
+            setDropdownOpen(!dropdownOpen);
+        };
     return (
         <div className="credScoreCont">
             <h1 className="mainH2">AgriCred</h1>
             <div className="navBar">
-                <ul>
-                    <li><Link to="/dashboard">Home</Link></li>
-                    <li><Link to="/pending-invoices">Pending Invoices</Link></li>
-                    <li><Link to="/payments">Upcoming Payments</Link></li>
-                    <li><Link to="/payment-history">Payment History</Link></li>
-                    <li><Link to="/credit-score">Credit Score</Link></li>
-                    <Link to={'/settings'}><li>Settings</li></Link>
-                </ul>
-            </div>
+                            <ul>
+                                <li><Link to="/dashboard">Home</Link></li>
+                                <li id='dd' onClick={toggleDropdown}>
+                                    Invoices on Us ▼
+                                    {dropdownOpen && (
+                                        <ul className="dropdown">
+                                            <li><Link to={'/pending-invoices'}>Pending Invoices</Link></li>
+                                            <li><Link to={'/payments'}>Upcoming Payments</Link></li>
+                                        </ul>
+                                    )}
+                                </li>
+                                <li><Link to="/payment-history">Payment History</Link></li>
+                                <li><Link to={'/invoices-by-us'}>Invoices by Us</Link></li>
+                                <li><Link to="/credit-score">Credit Score</Link></li>
+                                <li><Link to="/settings">Settings</Link></li>
+                            </ul>
+                        </div>
             <div className="summary">
                 <div className="line3">
                     <h3 style={{ textAlign: "center" }}>Credit Report</h3>

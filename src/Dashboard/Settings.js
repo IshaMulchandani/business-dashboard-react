@@ -1,22 +1,36 @@
 import React from 'react';
 import './Settings.css';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Settings() {
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    
+        const toggleDropdown = () => {
+            setDropdownOpen(!dropdownOpen);
+        };
     return (
         <div className="settingsCont">
             <h1 className="mainH2">AgriCred</h1>
             <div className="navBar">
-                <ul>
-                    <li><Link to="/dashboard">Home</Link></li>
-                    <li><Link to="/pending-invoices">Pending Invoices</Link></li>
-                    <li><Link to="/payments">Upcoming Payments</Link></li>
-                    <li><Link to="/payment-history">Payment History</Link></li>
-                    <li><Link to="/credit-score">Credit Score</Link></li>
-                    <li>Settings</li>
-                </ul>
-                <h2 className="mainH2">Settings</h2>
-            </div>
+                            <ul>
+                                <li><Link to="/dashboard">Home</Link></li>
+                                <li id='dd' onClick={toggleDropdown}>
+                                    Invoices on Us ▼
+                                    {dropdownOpen && (
+                                        <ul className="dropdown">
+                                            <li><Link to={'/pending-invoices'}>Pending Invoices</Link></li>
+                                            <li><Link to={'/payments'}>Upcoming Payments</Link></li>
+                                        </ul>
+                                    )}
+                                </li>
+                                <li><Link to="/payment-history">Payment History</Link></li>
+                                <li><Link to={'/invoices-by-us'}>Invoices by Us</Link></li>
+                                <li><Link to="/credit-score">Credit Score</Link></li>
+                                <li><Link to="/settings">Settings</Link></li>
+                            </ul>
+                        </div>
+            <h2 className="mainH2">Settings</h2>
             <div className="settings-content">
                 <div className="settings-section">
                     <h3>Account Settings</h3>
@@ -89,3 +103,4 @@ export default function Settings() {
         </div>
     );
 }
+
