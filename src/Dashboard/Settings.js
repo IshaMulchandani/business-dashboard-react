@@ -15,6 +15,7 @@ export default function Settings() {
                     <li><Link to="/credit-score">Credit Score</Link></li>
                     <li>Settings</li>
                 </ul>
+                <h2 className="mainH2">Settings</h2>
             </div>
             <div className="settings-content">
                 <div className="settings-section">
